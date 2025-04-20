@@ -6,20 +6,24 @@
   box-sizing: border-box;
 }
 
-/*.flickity-viewport {
-  height: 400px !important;
-}*/
-
 .carousel {
   margin-top: 100px;
   width: 100%;
   position: relative;
-}
-.carousel__cell {
-  width: 100vw;
-  height: 400px;
-  align-items: center;
-  justify-content: center;
+
+  &__cell {
+    width: 100vw;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+
+    &--highlighted {
+      display: block;
+      width: 100%;
+      background-size: cover;
+      object-fit: contain;
+    }
+  }
 }
 
 .carousel__cell img {
@@ -29,12 +33,6 @@
   object-fit: contain;
 }
 
-.carousel__cell--highlighted {
-  display: block;
-  width: 100%;
-  background-size: cover;
-  object-fit: contain;
-}
 
 /* カスタムナビゲーション */
 .slider-controls {
