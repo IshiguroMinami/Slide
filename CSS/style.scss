@@ -12,61 +12,26 @@
   position: relative;
 
   &__cell {
-    width: 100vw;
-    height: 400px;
-    align-items: center;
-    justify-content: center;
-
-    &--highlighted {
-      display: block;
-      width: 100%;
-      background-size: cover;
-      object-fit: contain;
-    }
+    width: 100%;
+    height: auto;
   }
 }
 
 .carousel__cell img {
   width: 100%;
   height: auto;
-  display: block;
-  object-fit: contain;
 }
 
-
-/* カスタムナビゲーション */
 .flickity-page-dots {
   bottom: -40px;
-  display: inline-block;
-}
-.flickity-page-dots .dot.is-selected {
-  background: #004098;
 }
 
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top: calc(100% + 14px);
-  transform: none;
+.flickity-button {
+  background: hsla(0, 0%, 100%, .75);
+  border: none;
   color: #004098;
 }
 
-.flickity-prev-next-button.previous {
-  left: 40%;
-}
-
-.flickity-prev-next-button.next {
-  right: 40%;
-}
-
-/* レスポンシブ調整 */
-@media (min-width: 768px) and (max-width: 1023px){
-  .flickity-prev-next-button.previous {
-    left: 25%;
-  }
-
-  .flickity-prev-next-button.next {
-    right: 25%;
-  }
+.flickity-page-dots .dot.is-selected {
+  background: #004098;
 }
