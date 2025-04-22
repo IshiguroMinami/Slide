@@ -10,7 +10,3 @@ $(document).ready(function(){
     autoPlay: 3000
   });
 });
-
-// FlickityのDOM生成が正しくされているか
-console.log($('.carousel').data('flickity')); // nullやundefinedなら初期化ミス
-
