@@ -12,14 +12,16 @@
   position: relative;
 
   &__cell {
-    width: 100%;
+    width: 100vw;
     height: auto;
+    flex-shrink: 0;
   }
 }
 
 .carousel__cell img {
   width: 100%;
   height: auto;
+  display: block;
 }
 
 .flickity-page-dots {
