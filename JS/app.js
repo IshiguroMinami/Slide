@@ -7,6 +7,10 @@ $(document).ready(function(){
     wrapAround: true,
     imagesLoaded: true,
     setGallerySize: true,
-    autoPlay: 5000
+    autoPlay: 3000
   });
 });
+
+// FlickityのDOM生成が正しくされているか
+console.log($('.carousel').data('flickity')); // nullやundefinedなら初期化ミス
+
