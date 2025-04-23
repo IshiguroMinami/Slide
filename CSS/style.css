@@ -9,13 +9,13 @@
   width: 100%;
   position: relative;
 }
-.carousel__cell {
+.carousel-cell {
   width: 100%;
   height: auto;
   flex-shrink: 0;
 }
 
-.carousel__cell img {
+.carousel-cell img {
   width: 100%;
   height: auto;
   display: block;
